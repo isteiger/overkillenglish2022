@@ -7,12 +7,12 @@ function App() {
         <div>
             <div style={{ display: "flex", flexDirection: "row" }}>
                 <div style={{ backgroundColor: "lightblue", height: "85vh", width: "50vw", position: "relative" }}>
-                    <Typography variant="h1" fontWeight="bold" color="rgba(255,255,255,0.8)" style={{ position: "absolute", bottom: 0, right: 15, textAlign: "end", fontFamily: "Merriweather, serif", fontSize: "8rem" }}>
+                    <img src="./images/martin.png" style={{ position: "absolute", bottom: "0", right: "0", zIndex: 1 }} alt="martin kapel" />
+                    <Typography variant="h1" fontWeight="bold" color="rgba(255,255,255,0.8)" style={{ zIndex: 2, position: "absolute", bottom: 0, right: 15, textAlign: "end", fontFamily: "Merriweather, serif", fontSize: "8rem" }}>
                         <span className='authorText1'>MARTIN<br /></span>
 
                         KAPEL
                     </Typography>
-                    <img src="./images/martin.png" alt="martin kapel" />
                 </div>
 
 
