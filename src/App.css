@@ -3,3 +3,12 @@
     font-size: 4rem !important;
     vertical-align: bottom;
 }
+
+body {
+    background-color: rgb(58, 68, 75);
+    color: white;
+}
+
+.merriweather {
+    font-family: 'Merriweather', serif !important;
+}
