@@ -112,7 +112,7 @@ function App() {
 
 
                             <Card style={{ width: "35rem", borderRadius: "1rem" }} className="merriweather">
-                                <CardHeader title="Kapel is deported to Poland" subheader="1938" />
+                                <CardHeader title="Kapel is deported to Poland" subheader="October 1938" />
 
                                 <div style={{ display: "flex" }}>
                                     <CardMedia
@@ -148,7 +148,56 @@ function App() {
                                         style={{ marginLeft: "1rem", borderTopLeftRadius: "1rem", maxHeight: "15rem", maxWidth: "20rem" }}
                                     />
                                 </div>
-                            </Card></TimelineContent>
+                            </Card>
+                        </TimelineContent>
+                    </TimelineItem>
+                    <TimelineItem>
+                        <TimelineSeparator>
+                            <TimelineDot />
+                            <TimelineConnector />
+                        </TimelineSeparator>
+                        <TimelineContent>
+
+
+                            <Card style={{ width: "35rem", borderRadius: "1rem" }} className="merriweather">
+                                <CardHeader title="Kapel escapes to England" subheader="April 11, 1945" />
+
+                                <div style={{ display: "flex" }}>
+                                    <CardMedia
+                                        component="img"
+                                        image="/images/Buchenwald.jpg"
+                                        alt="Buchenwald"
+                                        style={{ marginRight: "1rem", borderTopRightRadius: "1rem", maxHeight: "15rem", width: "auto" }}
+                                    />
+                                    <Typography variant="body2" color="text.secondary" style={{ marginRight: "1rem" }}>
+                                        Martin Kapel was able to escape from Poland and get to Coventry, England on a special Kindertransport (children's transport). He lived in England until his death.
+                                    </Typography>
+                                </div>
+                            </Card>
+                        </TimelineContent>
+                    </TimelineItem>
+                    <TimelineItem>
+                        <TimelineSeparator>
+                            <TimelineDot />
+                            <TimelineConnector />
+                        </TimelineSeparator>
+                        <TimelineContent>
+                            <Card style={{ width: "35rem", borderRadius: "1rem", marginLeft: "auto", marginRight: "0" }} className="merriweather">
+                                <CardHeader title="Wiesel is Liberated!" subheader="July 18, 1940" />
+
+                                <div style={{ display: "flex" }}>
+                                    <Typography variant="body2" color="text.secondary" style={{ marginLeft: "1rem" }}>
+                                        Elie Wiesel was liberated from Buchenwald April, 11, 1945, as they were about to be moved to another camp. The picture to the left is of Elie and his in Bunchenwald.
+                                    </Typography>
+                                    <CardMedia
+                                        component="img"
+                                        image="/images/Buchenwald.jpg"
+                                        alt="Buchenwald"
+                                        style={{ marginLeft: "1rem", borderTopLeftRadius: "1rem", maxHeight: "15rem", maxWidth: "20rem" }}
+                                    />
+                                </div>
+                            </Card>
+                        </TimelineContent>
                     </TimelineItem>
                 </Timeline>
             </div>
