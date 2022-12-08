@@ -8,6 +8,7 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import { Card, CardHeader, CardMedia } from '@mui/material';
+import TimelineElement from './TimelineElement';
 
 function App() {
     return (
@@ -49,156 +50,22 @@ function App() {
 
             <div className="timeline">
                 <Timeline position="alternate">
-                    <TimelineItem>
-                        <TimelineSeparator>
-                            <TimelineDot >
-                                <div style={{ fontFamily: "Merriweather", height: "2rem", width: "2rem", fontSize: "1.5rem", textAlign: "center", lineHeight: "2rem" }}>
-                                    W
-                                </div>
-                            </TimelineDot>
-                            <TimelineConnector />
-                        </TimelineSeparator>
-                        <TimelineContent>
-                            <Card style={{ width: "35rem", borderRadius: "1rem" }} className="merriweather">
-                                <CardHeader title="Eliezer Wiesel was Born" subheader="September 30, 1928" />
-
-                                <div style={{ display: "flex" }}>
-                                    <CardMedia
-                                        component="img"
-                                        image="/images/elieYoung.jpg"
-                                        alt="hank schrader realizing walt is heisenberg"
-                                        style={{ marginRight: "1rem", borderTopRightRadius: "1rem", maxHeight: "15rem", width: "auto" }}
-                                    />
-                                    <Typography variant="body2" color="text.secondary" style={{ marginRight: "1rem" }}>
-                                        Eliezer "Elie" Wiesel was born to Shlomo and Sarah Wiesel on September 30th, 1928 in modern day Sighetu Marmației, Romania. He had two older sister at the time, Beatrice and Hilda. The picture to the left is the oldest one we could locate.
-                                    </Typography>
-                                </div>
-                            </Card>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <TimelineSeparator>
-                            <TimelineDot>
-                                <div style={{ fontFamily: "Merriweather", height: "2rem", width: "2rem", fontSize: "1.5rem", textAlign: "center", lineHeight: "2rem" }}>
-                                    K
-                                </div>
-                            </TimelineDot>
-                            <TimelineConnector />
-                        </TimelineSeparator>
-                        <TimelineContent>
-                            <Card style={{ width: "35rem", borderRadius: "1rem", marginLeft: "auto", marginRight: "0" }} className="merriweather">
-                                <CardHeader title="Martin Kapel was Born" subheader="Some time in 1930" />
-
-                                <div style={{ display: "flex" }}>
-                                    <Typography variant="body2" color="text.secondary" style={{ marginLeft: "1rem" }}>
-                                        Martin Kapel was born in Leipzig, Germany in 1930. His parents were both Polish immigrants who moved to Germany. The picture to the right is of Leipzig in 1930, as little is known about Martin.
-                                    </Typography>
-                                    <CardMedia
-                                        component="img"
-                                        image="/images/Leipzig1930.jpg"
-                                        alt="Leipzig, Germany in 1930"
-                                        style={{ marginLeft: "1rem", borderTopLeftRadius: "1rem", maxHeight: "15rem", maxWidth: "20rem" }}
-                                    />
-                                </div>
-                            </Card>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <TimelineSeparator>
-                            <TimelineDot />
-                            <TimelineConnector />
-                        </TimelineSeparator>
-                        <TimelineContent>
-
-
-                            <Card style={{ width: "35rem", borderRadius: "1rem" }} className="merriweather">
-                                <CardHeader title="Kapel is deported to Poland" subheader="October 1938" />
-
-                                <div style={{ display: "flex" }}>
-                                    <CardMedia
-                                        component="img"
-                                        image="/images/polenaktion2.jpg"
-                                        alt="Polandaktion"
-                                        style={{ marginRight: "1rem", borderTopRightRadius: "1rem", maxHeight: "15rem", width: "auto" }}
-                                    />
-                                    <Typography variant="body2" color="text.secondary" style={{ marginRight: "1rem" }}>
-                                        Martin Kapel was deported very forcefully by the SS to Poland in 1938. The picture to the right is of the Polandaktion, the mass deportation of Jews to Poland.
-                                    </Typography>
-                                </div>
-                            </Card>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <TimelineSeparator>
-                            <TimelineDot />
-                            <TimelineConnector />
-                        </TimelineSeparator>
-                        <TimelineContent>
-                            <Card style={{ width: "35rem", borderRadius: "1rem", marginLeft: "auto", marginRight: "0" }} className="merriweather">
-                                <CardHeader title="Wiesel is sent to Auschwitz" subheader="May 1944" />
-
-                                <div style={{ display: "flex" }}>
-                                    <Typography variant="body2" color="text.secondary" style={{ marginLeft: "1rem" }}>
-                                        Elie Wiesel was sent to Auschwitz in May of 1944. He was already living in a ghetto, but was moved, along with a ton of other local Jews, to Auschwitz. The picture to the right is of the Auschwitz concentration camp.
-                                    </Typography>
-                                    <CardMedia
-                                        component="img"
-                                        image="/images/Leipzig1930.jpg"
-                                        alt="Leipzig, Germany in 1930"
-                                        style={{ marginLeft: "1rem", borderTopLeftRadius: "1rem", maxHeight: "15rem", maxWidth: "20rem" }}
-                                    />
-                                </div>
-                            </Card>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <TimelineSeparator>
-                            <TimelineDot />
-                            <TimelineConnector />
-                        </TimelineSeparator>
-                        <TimelineContent>
-
-
-                            <Card style={{ width: "35rem", borderRadius: "1rem" }} className="merriweather">
-                                <CardHeader title="Kapel escapes to England" subheader="April 11, 1945" />
-
-                                <div style={{ display: "flex" }}>
-                                    <CardMedia
-                                        component="img"
-                                        image="/images/Buchenwald.jpg"
-                                        alt="Buchenwald"
-                                        style={{ marginRight: "1rem", borderTopRightRadius: "1rem", maxHeight: "15rem", width: "auto" }}
-                                    />
-                                    <Typography variant="body2" color="text.secondary" style={{ marginRight: "1rem" }}>
-                                        Martin Kapel was able to escape from Poland and get to Coventry, England on a special Kindertransport (children's transport). He lived in England until his death.
-                                    </Typography>
-                                </div>
-                            </Card>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <TimelineSeparator>
-                            <TimelineDot />
-                            <TimelineConnector />
-                        </TimelineSeparator>
-                        <TimelineContent>
-                            <Card style={{ width: "35rem", borderRadius: "1rem", marginLeft: "auto", marginRight: "0" }} className="merriweather">
-                                <CardHeader title="Wiesel is Liberated!" subheader="July 18, 1940" />
-
-                                <div style={{ display: "flex" }}>
-                                    <Typography variant="body2" color="text.secondary" style={{ marginLeft: "1rem" }}>
-                                        Elie Wiesel was liberated from Buchenwald April, 11, 1945, as they were about to be moved to another camp. The picture to the left is of Elie and his in Bunchenwald.
-                                    </Typography>
-                                    <CardMedia
-                                        component="img"
-                                        image="/images/Buchenwald.jpg"
-                                        alt="Buchenwald"
-                                        style={{ marginLeft: "1rem", borderTopLeftRadius: "1rem", maxHeight: "15rem", maxWidth: "20rem" }}
-                                    />
-                                </div>
-                            </Card>
-                        </TimelineContent>
-                    </TimelineItem>
+                    <TimelineElement direction="right" inital="W" img="/images/elieYoung.jpg" imgalt="Young Elie Wiesel" title="Eliezer Wiesel was Born" date="September 30, 1928"
+                        description="Eliezer &quot;Elie&quot; Wiesel was born to Shlomo and Sarah Wiesel on September 30th, 1928 in modern day Sighetu Marmației, Romania. He had two older sister at the time, Beatrice and Hilda. The picture to the left is the oldest one we could locate." />
+                    <TimelineElement direction="left" inital="K" img="/images/Leipzig1930.jpg" imgalt="Leipzig, Germany in 1930" title="Martin Kapel was Born" date="Some time in 1930"
+                        description="Martin Kapel was born in Leipzig, Germany in 1930. His parents were both Polish immigrants who moved to Germany. The picture to the right is of Leipzig in 1930, as little is known about Martin." />
+                    <TimelineElement direction="right" inital="K" img="/images/polenaktion2.jpg" imgalt="Polandaktion" title="Kapel is deported to Poland" date="October 1938"
+                        description="Martin Kapel was deported very forcefully by the SS to Poland in 1938. The picture to the right is of the Polandaktion, the mass deportation of Jews to Poland." />
+                    <TimelineElement direction="left" inital="W" img="/images/Leipzig1930.jpg" imgalt="Leipzig, Germany in 1930" title="Wiesel is sent to Auschwitz" date="May 1944"
+                        description="Elie Wiesel was sent to Auschwitz in May of 1944. He was already living in a ghetto, but was moved, along with a ton of other local Jews, to Auschwitz. The picture to the right is of the Auschwitz concentration camp." />
+                    <TimelineElement direction="right" inital="K" img="/images/kindertransport.jpg" imgalt="Kindertransport" title="Kapel escapes to England" date="July 18, 1940"
+                        description="Martin Kapel was able to escape from Poland and get to Coventry, England on a special Kindertransport (children's transport). He lived in England until his death. The image to the left shows children from one of these transports arriving in England." />
+                    <TimelineElement direction="left" inital="W" img="/images/Buchenwald.jpg" imgalt="Buchenwald" title="Wiesel is Liberated!" date="April 11, 1945"
+                        description="Elie Wiesel was liberated from Buchenwald April, 11, 1945, as they were about to be moved to another camp. The picture to the right includes Elie. He is in the 2nd row from the bottom and 4 right from the left near the post." />
+                    <TimelineElement direction="right" inital="W" img="/images/night.jpg" imgalt="Buchenwald" title={<>Wiesel releases <i>Un di velt hot geshvign</i></>} date="1956"
+                        description={<>This is the first version of <i>Night</i>, and it is written in Yiddish. Since it's release, the memoir has been published in 30 different languages.</>} />
+                    <TimelineElement direction="left" inital="W" img="/images/elieGrave.jpg" imgalt="Elie's Grave" title="Elie Wiesel dies" date="July 2, 2016"
+                        description="Elie Wiesel died July 2nd, 2016 at his home in Manhattan. He is buried at Sharon Gardens Cemetary in Valhalla, New York. Senator from Utah Orrin Hatch paid tribute to Elie on the Senate floor. " />
                 </Timeline>
             </div>
         </div>
