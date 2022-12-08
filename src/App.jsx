@@ -7,8 +7,7 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
-import { Card, CardHeader, CardMedia, CardContent } from '@mui/material';
+import { Card, CardHeader, CardMedia } from '@mui/material';
 
 function App() {
     return (
