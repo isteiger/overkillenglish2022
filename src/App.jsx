@@ -51,65 +51,105 @@ function App() {
             <div className="timeline">
                 <Timeline position="alternate">
                     <TimelineItem>
-                        <TimelineOppositeContent color="text.secondary" fontFamily="Merriweather">
-                            <span style={{ marginTop: "1rem", display: "block" }}> October 2, 2009</span>
-                        </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot >
-                                <div style={{ fontFamily: "Merriweather", height: "2rem", width: "2rem", fontSize: "2rem", textAlign: "center", lineHeight: "2rem" }}>
-                                    S
+                                <div style={{ fontFamily: "Merriweather", height: "2rem", width: "2rem", fontSize: "1.5rem", textAlign: "center", lineHeight: "2rem" }}>
+                                    W
                                 </div>
                             </TimelineDot>
                             <TimelineConnector />
                         </TimelineSeparator>
                         <TimelineContent>
                             <Card style={{ width: "35rem", borderRadius: "1rem" }} className="merriweather">
-                                <CardHeader title="Hank takes a shit" subheader="October 2, 2009" />
+                                <CardHeader title="Eliezer Wiesel was Born" subheader="September 30, 1928" />
 
                                 <div style={{ display: "flex" }}>
                                     <CardMedia
                                         component="img"
-                                        height="194"
-                                        image="https://i.ytimg.com/vi/D0TzeZ1SYV0/maxresdefault.jpg"
+                                        image="/images/elieYoung.jpg"
                                         alt="hank schrader realizing walt is heisenberg"
-                                        style={{ marginRight: "1rem", borderTopRightRadius: "1rem" }}
+                                        style={{ marginRight: "1rem", borderTopRightRadius: "1rem", maxHeight: "15rem", width: "auto" }}
                                     />
-                                    <Typography variant="body2" color="text.secondary">
-                                        Hank Schrader realizes that Walter White is Heisenberg after finding a copy of Walt Whitman's Leaves of Grass, which has a note from Gale in it. This is the beginning of the end for Walt.
+                                    <Typography variant="body2" color="text.secondary" style={{ marginRight: "1rem" }}>
+                                        Eliezer "Elie" Wiesel was born to Shlomo and Sarah Wiesel on September 30th, 1928 in modern day Sighetu Marmației, Romania. He had two older sister at the time, Beatrice and Hilda. The picture to the left is the oldest one we could locate.
                                     </Typography>
                                 </div>
                             </Card>
                         </TimelineContent>
                     </TimelineItem>
                     <TimelineItem>
-                        <TimelineOppositeContent color="text.secondary">
-                            10:00 am
-                        </TimelineOppositeContent>
                         <TimelineSeparator>
-                            <TimelineDot />
+                            <TimelineDot>
+                                <div style={{ fontFamily: "Merriweather", height: "2rem", width: "2rem", fontSize: "1.5rem", textAlign: "center", lineHeight: "2rem" }}>
+                                    K
+                                </div>
+                            </TimelineDot>
                             <TimelineConnector />
                         </TimelineSeparator>
-                        <TimelineContent>Code</TimelineContent>
+                        <TimelineContent>
+                            <Card style={{ width: "35rem", borderRadius: "1rem", marginLeft: "auto", marginRight: "0" }} className="merriweather">
+                                <CardHeader title="Martin Kapel was Born" subheader="Some time in 1930" />
+
+                                <div style={{ display: "flex" }}>
+                                    <Typography variant="body2" color="text.secondary" style={{ marginLeft: "1rem" }}>
+                                        Martin Kapel was born in Leipzig, Germany in 1930. His parents were both Polish immigrants who moved to Germany. The picture to the right is of Leipzig in 1930, as little is known about Martin.
+                                    </Typography>
+                                    <CardMedia
+                                        component="img"
+                                        image="/images/Leipzig1930.jpg"
+                                        alt="Leipzig, Germany in 1930"
+                                        style={{ marginLeft: "1rem", borderTopLeftRadius: "1rem", maxHeight: "15rem", maxWidth: "20rem" }}
+                                    />
+                                </div>
+                            </Card>
+                        </TimelineContent>
                     </TimelineItem>
                     <TimelineItem>
-                        <TimelineOppositeContent color="text.secondary">
-                            12:00 am
-                        </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot />
                             <TimelineConnector />
                         </TimelineSeparator>
-                        <TimelineContent>Sleep</TimelineContent>
+                        <TimelineContent>
+
+
+                            <Card style={{ width: "35rem", borderRadius: "1rem" }} className="merriweather">
+                                <CardHeader title="Kapel is deported to Poland" subheader="1938" />
+
+                                <div style={{ display: "flex" }}>
+                                    <CardMedia
+                                        component="img"
+                                        image="/images/polenaktion2.jpg"
+                                        alt="Polandaktion"
+                                        style={{ marginRight: "1rem", borderTopRightRadius: "1rem", maxHeight: "15rem", width: "auto" }}
+                                    />
+                                    <Typography variant="body2" color="text.secondary" style={{ marginRight: "1rem" }}>
+                                        Martin Kapel was deported very forcefully by the SS to Poland in 1938. The picture to the right is of the Polandaktion, the mass deportation of Jews to Poland.
+                                    </Typography>
+                                </div>
+                            </Card>
+                        </TimelineContent>
                     </TimelineItem>
                     <TimelineItem>
-                        <TimelineOppositeContent color="text.secondary">
-                            9:00 am
-                        </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot />
                             <TimelineConnector />
                         </TimelineSeparator>
-                        <TimelineContent>Repeat</TimelineContent>
+                        <TimelineContent>
+                            <Card style={{ width: "35rem", borderRadius: "1rem", marginLeft: "auto", marginRight: "0" }} className="merriweather">
+                                <CardHeader title="Wiesel is sent to Auschwitz" subheader="May 1944" />
+
+                                <div style={{ display: "flex" }}>
+                                    <Typography variant="body2" color="text.secondary" style={{ marginLeft: "1rem" }}>
+                                        Elie Wiesel was sent to Auschwitz in May of 1944. He was already living in a ghetto, but was moved, along with a ton of other local Jews, to Auschwitz. The picture to the right is of the Auschwitz concentration camp.
+                                    </Typography>
+                                    <CardMedia
+                                        component="img"
+                                        image="/images/Leipzig1930.jpg"
+                                        alt="Leipzig, Germany in 1930"
+                                        style={{ marginLeft: "1rem", borderTopLeftRadius: "1rem", maxHeight: "15rem", maxWidth: "20rem" }}
+                                    />
+                                </div>
+                            </Card></TimelineContent>
                     </TimelineItem>
                 </Timeline>
             </div>
