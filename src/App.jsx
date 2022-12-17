@@ -63,6 +63,10 @@ function App() {
                         description="Elie Wiesel died July 2nd, 2016 at his home in Manhattan. He is buried at Sharon Gardens Cemetary in Valhalla, New York. Senator from Utah Orrin Hatch paid tribute to Elie on the Senate floor. " />
                 </Timeline>
             </div>
+
+            <div className="card">
+
+            </div>
         </div>
 
     );
