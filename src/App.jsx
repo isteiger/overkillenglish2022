@@ -4,6 +4,7 @@ import "./App.css";
 import Timeline from '@mui/lab/Timeline';
 import { Card } from '@mui/material';
 import TimelineElement from './TimelineElement';
+import InfoElement from "./InfoElement";
 
 function App() {
     return (
@@ -51,7 +52,7 @@ function App() {
                         description="Martin Kapel was born in Leipzig, Germany in 1930. His parents were both Polish immigrants who moved to Germany. The picture to the right is of Leipzig in 1930, as little is known about Martin." />
                     <TimelineElement direction="right" inital="K" img="/images/polenaktion2.jpg" imgalt="Polandaktion" title="Kapel is deported to Poland" date="October 1938"
                         description="Martin Kapel was deported very forcefully by the SS to Poland in 1938. The picture to the right is of the Polandaktion, the mass deportation of Jews to Poland." />
-                    <TimelineElement direction="left" inital="W" img="/images/Leipzig1930.jpg" imgalt="Leipzig, Germany in 1930" title="Wiesel is sent to Auschwitz" date="May 1944"
+                    <TimelineElement direction="left" inital="W" img="/images/auschwitzArrival.jpg" imgalt="Leipzig, Germany in 1930" title="Wiesel is sent to Auschwitz" date="May 1944"
                         description="Elie Wiesel was sent to Auschwitz in May of 1944. He was already living in a ghetto, but was moved, along with a ton of other local Jews, to Auschwitz. The picture to the right is of the Auschwitz concentration camp." />
                     <TimelineElement direction="right" inital="K" img="/images/kindertransport.jpg" imgalt="Kindertransport" title="Kapel escapes to England" date="July 18, 1940"
                         description="Martin Kapel was able to escape from Poland and get to Coventry, England on a special Kindertransport (children's transport). He lived in England until his death. The image to the left shows children from one of these transports arriving in England." />
@@ -65,7 +66,10 @@ function App() {
             </div>
 
             <div className="card">
-
+                <InfoElement title="Life Before"
+                    kdescription="He was born in Leipzig, Germany, making him a Polish citizen by the laws of both Germany and Poland. He had to leave his primary school as anti-Jewish legislation meant that Jewish children no longer attend non-Jewish schools." kimg="/images/elieGrave.jpg" kimgalt="my nuts"
+                    wdescription="" wimg="/images/elieGrave.jpg" wimgalt="my nuts"
+                    similarities="asfdsssdf" />
             </div>
         </div>
 

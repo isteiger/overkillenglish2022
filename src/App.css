@@ -12,3 +12,7 @@ body {
 .merriweather {
     font-family: 'Merriweather', serif !important;
 }
+
+.card {
+    margin: 2.5vh 1vw;
+}
