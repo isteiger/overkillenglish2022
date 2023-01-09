@@ -67,7 +67,34 @@ function App() {
 
             <div className="card">
                 <InfoElement title="Life Before"
-                    kdescription="He was born in Leipzig, Germany, making him a Polish citizen by the laws of both Germany and Poland. He had to leave his primary school as anti-Jewish legislation meant that Jewish children no longer attend non-Jewish schools." kimg="/images/elieGrave.jpg" kimgalt="my nuts"
+                    kdescription="He was born in Leipzig, Germany, making him a Polish citizen by the laws of both Germany and Poland.
+                    According to shalomadventure.com, he &quot;was brought up in an orthodox Jewish household&quot; and they weren't well off. " kimg="/images/elieGrave.jpg" kimgalt="my nuts"
+                    wdescription="He was born in Sighet, Romania on September 30th, 1928. His family consisted of his mother, Sarah, his father, Shlomo, and his 3 sisters, Beatrice, Hilda, and Tzipora. His father was a straightforward businessman who encouraged Elie to pursue education, and his mother encouraged him to study the Torah." wimg="/images/elieGrave.jpg" wimgalt="my nuts"
+                    similarities="asfdsssdf" />
+            </div>
+
+            <div className="card">
+                <InfoElement title="Relocation"
+                    kdescription="One morning in 1938, his family got a knock on the door in the early morning. It was the Nazis. They were told to quickly get dressed, get their stuff, and go. They were put on a train, with lots more passengers getting on along the way, and then they were dropped off, told to walk along the railroad line, and then they made it to Poland, with the responding officers confused, since Germany did this in secret. They ended up staying with some relatives in Kraków." kimg="/images/elieGrave.jpg" kimgalt="my nuts"
+                    wdescription="" wimg="/images/elieGrave.jpg" wimgalt="my nuts"
+                    similarities="asfdsssdf" />
+            </div>
+            <div className="card">
+                <InfoElement title="Place of Survival"
+
+                    ksubheader="Poland" kdescription="One morning in 1938, his family got a knock on the door in the early morning. It was the Nazis. They were told to quickly get dressed, get their stuff, and go. They were put on a train, with lots more passengers getting on along the way, and then they were dropped off, told to walk along the railroad line, and then they made it to Poland, with the responding officers confused, since Germany did this in secret. They ended up staying with some relatives in Kraków." kimg="/images/elieGrave.jpg" kimgalt="my nuts"
+                    wdescription="" wimg="/images/elieGrave.jpg" wimgalt="my nuts"
+                    similarities="asfdsssdf" />
+            </div>
+            <div className="card">
+                <InfoElement title="Experiences"
+                    kdescription="One morning in 1938, his family got a knock on the door in the early morning. It was the Nazis. They were told to quickly get dressed, get their stuff, and go. They were put on a train, with lots more passengers getting on along the way, and then they were dropped off, told to walk along the railroad line, and then they made it to Poland, with the responding officers confused, since Germany did this in secret. They ended up staying with some relatives in Kraków." kimg="/images/elieGrave.jpg" kimgalt="my nuts"
+                    wdescription="" wimg="/images/elieGrave.jpg" wimgalt="my nuts"
+                    similarities="asfdsssdf" />
+            </div>
+            <div className="card">
+                <InfoElement title="Life After"
+                    kdescription="One morning in 1938, his family got a knock on the door in the early morning. It was the Nazis. They were told to quickly get dressed, get their stuff, and go. They were put on a train, with lots more passengers getting on along the way, and then they were dropped off, told to walk along the railroad line, and then they made it to Poland, with the responding officers confused, since Germany did this in secret. They ended up staying with some relatives in Kraków." kimg="/images/elieGrave.jpg" kimgalt="my nuts"
                     wdescription="" wimg="/images/elieGrave.jpg" wimgalt="my nuts"
                     similarities="asfdsssdf" />
             </div>

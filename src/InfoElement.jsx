@@ -1,9 +1,4 @@
 import { Card, CardHeader, CardMedia, Typography, Divider } from '@mui/material';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
 
 export default function InfoElement(props) {
 
@@ -13,7 +8,7 @@ export default function InfoElement(props) {
             <Divider />
             <div style={{ display: "flex", flexDirection: "row" }}>
                 <div style={{ width: "40%" }} >
-                    <CardHeader title="Martin Kapel" style={{ textAlign: "right" }} />
+                    {props.ksubheader ? <CardHeader title="Martin Kapel" subheader={props.ksubheader} style={{ textAlign: "right" }} /> : <CardHeader title="Martin Kapel" style={{ textAlign: "right" }} />}
 
                     <div style={{ display: "flex" }}>
                         <Typography variant="body2" color="text.secondary" style={{ marginLeft: "1rem", flexGrow: "1", textAlign: "right" }}>
@@ -38,7 +33,7 @@ export default function InfoElement(props) {
 
 
                 <div style={{ width: "40%" }}>
-                    <CardHeader title="Elie Wiesel" />
+                    {props.wsubheader ? <CardHeader title="Elie Wiesel" subheader={props.wsubheader} /> : <CardHeader title="Elie Wiesel" />}
                     <div style={{ display: "flex" }}>
                         <CardMedia
                             component="img"
