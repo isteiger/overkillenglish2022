@@ -1,12 +1,32 @@
-import * as React from 'react';
-import Typography from '@mui/material/Typography';
 import "./App.css";
-import Timeline from '@mui/lab/Timeline';
-import { Card } from '@mui/material';
-import TimelineElement from './TimelineElement';
+
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Timeline from "@mui/lab/Timeline";
+import { Card, CardHeader, Collapse, Divider, IconButton } from "@mui/material";
+import { styled } from "@mui/material/styles";
+import Typography from "@mui/material/Typography";
+import * as React from "react";
+
 import InfoElement from "./InfoElement";
+import TimelineElement from "./TimelineElement";
+const ExpandMore = styled((props) => {
+    const { expand, ...other } = props;
+    return <IconButton {...other} />;
+})(({ theme, expand }) => ({
+    transform: !expand ? "rotate(0deg)" : "rotate(180deg)",
+    marginLeft: "auto",
+    transition: theme.transitions.create("transform", {
+        duration: theme.transitions.duration.shortest,
+    }),
+}));
+
 
 function App() {
+    const [expanded, setExpanded] = React.useState(false);
+
+    const handleExpandClick = () => {
+        setExpanded(!expanded);
+    };
     return (
         <div>
             <Card style={{ marginRight: "1vw", marginLeft: "1vw", marginTop: "2.5vh", marginBottom: "2.5vh", borderRadius: "1rem" }}>
@@ -14,7 +34,7 @@ function App() {
                     <div style={{ backgroundImage: "url(/images/polenaktion.jpg)", height: "80vh", width: "50vw", position: "relative" }}>
                         <img src="./images/kapelColor.png" style={{ position: "absolute", bottom: "0", right: 15, zIndex: 1, maxHeight: "60vh", filter: "drop-shadow(rgba(0, 0, 0, 0.35) 0px 3px 10px)" }} alt="martin kapel" />
                         <Typography variant="h1" fontWeight="bold" color="rgba(255,255,255,0.8)" style={{ zIndex: 2, position: "absolute", bottom: 0, right: 15, textAlign: "end", fontFamily: "Merriweather, serif", fontSize: "8rem" }}>
-                            <span className='authorText1'>MARTIN<br /></span>
+                            <span className="authorText1">MARTIN<br /></span>
 
                             KAPEL
                         </Typography>
@@ -26,7 +46,7 @@ function App() {
                         <img src="./images/elieColor.png" style={{ position: "absolute", bottom: "0", left: 15, zIndex: 1, maxHeight: "60vh", filter: "drop-shadow(rgba(0, 0, 0, 0.35) 0px 3px 10px)" }} alt="elie wiesel" />
 
                         <Typography variant="h1" fontWeight="bold" color="rgba(255,255,255,0.8)" style={{ zIndex: 2, position: "absolute", bottom: 0, left: 15, fontFamily: "Merriweather, serif", fontSize: "8rem" }}>
-                            <span className='authorText1'>ELIE<br /></span>
+                            <span className="authorText1">ELIE<br /></span>
                             WIESEL
                         </Typography>
                     </div>
@@ -75,6 +95,7 @@ function App() {
 
             <div className="card">
                 <InfoElement title="Relocation"
+                    ksubheader="Polenaktion, October 1938"
                     kdescription="One morning in 1938, his family got a knock on the door in the early morning. It was the Nazis. They were told to quickly get dressed, get their stuff, and go. They were put on a train, with lots more passengers getting on along the way, and then they were dropped off, told to walk along the railroad line, and then they made it to Poland, with the responding officers confused, since Germany did this in secret. They ended up staying with some relatives in Kraków." kimg="/images/elieGrave.jpg" kimgalt="my nuts"
                     wdescription="" wimg="/images/elieGrave.jpg" wimgalt="my nuts"
                     similarities="asfdsssdf" />
@@ -98,8 +119,38 @@ function App() {
                     wdescription="" wimg="/images/elieGrave.jpg" wimgalt="my nuts"
                     similarities="asfdsssdf" />
             </div>
+            <Card>
+                <CardHeader title="Works Cited" action={<ExpandMore
+                    expand={expanded}
+                    onClick={handleExpandClick}
+                    aria-expanded={expanded}
+                    aria-label="show more"
+                >
+                    <ExpandMoreIcon />
+                </ExpandMore>} />
+                <Collapse in={expanded} timeout="auto" unmountOnExit>
+                    <Divider />
+                    <div style={{ display: "flex", flexDirection: "row" }}>
+                        <div style={{ width: "50%" }}>
+                            <CardHeader title="Martin Kapel" style={{ textAlign: "right" }} />
+                            <div style={{ display: "flex" }}>
+                                <Typography variant="body2" color="text.secondary" style={{ marginLeft: "1rem", flexGrow: "1", textAlign: "right" }}>
+                                    jckljfklj
+                                </Typography>
+                            </div>
+                        </div>
+                        <div style={{ width: "50%", borderLeft: "thin solid rgba(0, 0, 0, 0.12)" }}>
+                            <CardHeader title="Elie Wiesel" />
+                            <div style={{ display: "flex" }}>
+                                <Typography variant="body2" color="text.secondary" style={{ marginRight: "1rem" }}>
+                                    sfsd
+                                </Typography>
+                            </div>
+                        </div>
+                    </div>
+                </Collapse>
+            </Card>
         </div>
-
     );
 }
 

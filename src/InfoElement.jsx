@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardMedia, Typography, Divider } from '@mui/material';
+import { Card, CardHeader, CardMedia, Divider, Typography } from "@mui/material";
 
 export default function InfoElement(props) {
 

@@ -1,9 +1,9 @@
-import { Card, CardHeader, CardMedia, Typography } from '@mui/material';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
+import TimelineConnector from "@mui/lab/TimelineConnector";
+import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineDot from "@mui/lab/TimelineDot";
+import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineSeparator from "@mui/lab/TimelineSeparator";
+import { Card, CardHeader, CardMedia, Typography } from "@mui/material";
 
 export default function TimelineElement(props) {
     let right = (
@@ -45,12 +45,11 @@ export default function TimelineElement(props) {
             <TimelineContent>
                 <Card style={props.direction === "left" ? { width: "35rem", borderRadius: "1rem", marginLeft: "auto", marginRight: "0" } : { width: "35rem", borderRadius: "1rem" }} className="merriweather">
                     <CardHeader title={props.title} subheader={props.date} />
-
                     <div style={{ display: "flex" }}>
                         {props.direction === "left" ? left : right}
                     </div>
                 </Card>
             </TimelineContent>
         </TimelineItem>
-    )
+    );
 }
