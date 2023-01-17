@@ -115,7 +115,7 @@ function App() {
             </div>
             <div className="card">
                 <InfoElement title="Life After"
-                    kdescription="One morning in 1938, his family got a knock on the door in the early morning. It was the Nazis. They were told to quickly get dressed, get their stuff, and go. They were put on a train, with lots more passengers getting on along the way, and then they were dropped off, told to walk along the railroad line, and then they made it to Poland, with the responding officers confused, since Germany did this in secret. They ended up staying with some relatives in Kraków." kimg="/images/elieGrave.jpg" kimgalt="my nuts"
+                    kdescription="Martin went to the local school in Coventry and lived with his foster family in England. He learned English quickly, which led him to be put in the normal classes quite fast. Air raids occurred a lot in Coventry, with the worst being in November 1940. He moved to Birmingham for University, where he got a PhD in Chemistry, and he has lived there since. No information is available on whether he has died. The latest date I can find relating to him is 2017." kimg="/images/elieGrave.jpg" kimgalt="my nuts"
                     wdescription="" wimg="/images/elieGrave.jpg" wimgalt="my nuts"
                     similarities="asfdsssdf" />
             </div>
@@ -124,7 +124,7 @@ function App() {
                     expand={expanded}
                     onClick={handleExpandClick}
                     aria-expanded={expanded}
-                    aria-label="show more"
+                    aria-label="show more" f
                 >
                     <ExpandMoreIcon />
                 </ExpandMore>} />
