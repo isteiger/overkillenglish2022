@@ -72,7 +72,7 @@ function App() {
                         description="Martin Kapel was born in Leipzig, Germany in 1930. His parents were both Polish immigrants who moved to Germany. The picture to the right is of Leipzig in 1930, as little is known about Martin." />
                     <TimelineElement direction="right" inital="K" img="/images/polenaktion2.jpg" imgalt="Polandaktion" title="Kapel is deported to Poland" date="October 1938"
                         description="Martin Kapel was deported very forcefully by the SS to Poland in 1938. The picture to the right is of the Polandaktion, the mass deportation of Jews to Poland." />
-                    <TimelineElement direction="left" inital="W" img="/images/auschwitzArrival.jpg" imgalt="Leipzig, Germany in 1930" title="Wiesel is sent to Auschwitz" date="May 1944"
+                    <TimelineElement direction="left" inital="W" img="/images/auschwitzArrival.jpg" imgalt="Auschwitz Arrival" title="Wiesel is sent to Auschwitz" date="May 1944"
                         description="Elie Wiesel was sent to Auschwitz in May of 1944. He was already living in a ghetto, but was moved, along with a ton of other local Jews, to Auschwitz. The picture to the right is of the Auschwitz concentration camp." />
                     <TimelineElement direction="right" inital="K" img="/images/kindertransport.jpg" imgalt="Kindertransport" title="Kapel escapes to England" date="July 18, 1940"
                         description="Martin Kapel was able to escape from Poland and get to Coventry, England on a special Kindertransport (children's transport). He lived in England until his death. The image to the left shows children from one of these transports arriving in England." />
@@ -88,43 +88,38 @@ function App() {
             <div className="card">
                 <InfoElement title="Life Before"
                     kdescription="He was born in Leipzig, Germany, making him a Polish citizen by the laws of both Germany and Poland.
-                    According to shalomadventure.com, he &quot;was brought up in an orthodox Jewish household&quot; and they weren't well off. " kimg="/images/elieGrave.jpg" kimgalt="my nuts"
-                    wdescription="He was born in Sighet, Romania on September 30th, 1928. His family consisted of his mother, Sarah, his father, Shlomo, and his 3 sisters, Beatrice, Hilda, and Tzipora. His father was a straightforward businessman who encouraged Elie to pursue education, and his mother encouraged him to study the Torah." wimg="/images/elieGrave.jpg" wimgalt="my nuts"
-                    similarities="asfdsssdf" />
+                    According to shalomadventure.com, he &quot;was brought up in an orthodox Jewish household&quot; and they weren't well off. " kimg="/images/Leipzig1930.jpg" kimgalt="Leipzig, 1930"
+                    wdescription="He was born in Sighet, Romania on September 30th, 1928. His family consisted of his mother, Sarah, his father, Shlomo, and his 3 sisters, Beatrice, Hilda, and Tzipora. His father was a straightforward businessman who encouraged Elie to pursue education, and his mother encouraged him to study the Torah." wimg="/images/elieYoung.jpg" wimgalt="Young Elie Wiesel"
+                    similarities="Both were born around the same time period and had siblings. They both enjoyed learning a lot too." />
             </div>
 
             <div className="card">
                 <InfoElement title="Relocation"
                     ksubheader="Polenaktion, October 1938"
-                    kdescription="One morning in 1938, his family got a knock on the door in the early morning. It was the Nazis. They were told to quickly get dressed, get their stuff, and go. They were put on a train, with lots more passengers getting on along the way, and then they were dropped off, told to walk along the railroad line, and then they made it to Poland, with the responding officers confused, since Germany did this in secret. They ended up staying with some relatives in Kraków." kimg="/images/elieGrave.jpg" kimgalt="my nuts"
-                    wdescription="" wimg="/images/elieGrave.jpg" wimgalt="my nuts"
-                    similarities="asfdsssdf" />
+                    kdescription="One morning in 1938, his family got a knock on the door in the early morning. It was the Nazis. They were told to quickly get dressed, get their stuff, and go. They were put on a train, with lots more passengers getting on along the way, and then they were dropped off, told to walk along the railroad line, and then they made it to Poland, with the responding officers confused, since Germany did this in secret. They ended up staying with some relatives in Kraków." kimg="/images/polenaktion2.jpg" kimgalt="my nuts"
+                    wsubheader="To Auschwitz, May 1944" wdescription="Elie's family learned that they were to be evacuated from the ghettos they were living in. Everyone was allowed to bring a backpack with some of their things. The Hungarian police rounded up all the Jews in Sighet to send them to Auschwitz. They were sent via sealed cattle cars, all crammed in with barely any food or water. Many Jews died on the journey. Once there, they were separated by gender, and Elie's mother and younger sister Tzipora were immediately sent to death." wimg="/images/auschwitzArrival.jpg" wimgalt="Auschwitz Arrival"
+                    similarities="Both were forcefully expelled from their homes and basically herded out like sheep. The Nazi's basically said “get up, go” and treated them super inhumanly." />
             </div>
             <div className="card">
-                <InfoElement title="Place of Survival"
+                <InfoElement title="Place of Survival Experiences"
 
-                    ksubheader="Poland" kdescription="One morning in 1938, his family got a knock on the door in the early morning. It was the Nazis. They were told to quickly get dressed, get their stuff, and go. They were put on a train, with lots more passengers getting on along the way, and then they were dropped off, told to walk along the railroad line, and then they made it to Poland, with the responding officers confused, since Germany did this in secret. They ended up staying with some relatives in Kraków." kimg="/images/elieGrave.jpg" kimgalt="my nuts"
-                    wdescription="" wimg="/images/elieGrave.jpg" wimgalt="my nuts"
-                    similarities="asfdsssdf" />
-            </div>
-            <div className="card">
-                <InfoElement title="Experiences"
-                    kdescription="One morning in 1938, his family got a knock on the door in the early morning. It was the Nazis. They were told to quickly get dressed, get their stuff, and go. They were put on a train, with lots more passengers getting on along the way, and then they were dropped off, told to walk along the railroad line, and then they made it to Poland, with the responding officers confused, since Germany did this in secret. They ended up staying with some relatives in Kraków." kimg="/images/elieGrave.jpg" kimgalt="my nuts"
-                    wdescription="" wimg="/images/elieGrave.jpg" wimgalt="my nuts"
-                    similarities="asfdsssdf" />
+                    ksubheader="Poland, October 1938" kdescription="Continuing from before, Martin, his mother, and his sister were forced to walk along railroad tracks with a bunch of other people until they were in Poland, where authorities were confused. He next went to his relatives temporarily in Kraków, since they had nowhere else to stay. After that, they found a place to stay with their other relatives in Brzesko, a small village without many things like gas and water supply. His mother managed to get him and his sister a spot on a Kindertransport to England. None of his family in Poland survived the war." kimg="/images/elieGrave.jpg" kimgalt="my nuts"
+                    wsubheader="Auschwitz & Buchenwald, May 1944 - April 11th, 1945" wdescription="After surviving the intial selection, Elie and his father stuck together and were sent to work. Work was all they ever did. So many traumatic experiences happened there, from witnessing people getting shot on the spot, to people fighting and killing each other for food. When the Allies were getting closer to Auschwitz, Elie had been in the infirmary, and thought that if he stayed he would die, so he decided to evacuate to Buchenwald. Had he stayed, he would have been liberated. At Buchenwald, his father dies of dysentary caught from the long and grueling journey to the new camp. Later on, Elie is liberated by the Americans in April 1945." wimg="/images/elieGrave.jpg" wimgalt="my nuts"
+                    similarities="This could not be more different. Martin was not sent to a concentration camp and instead he was just sent to Poland, so you could say he had it a lot easier, but you also have to remember that what he went through is still unacceptable. " />
             </div>
             <div className="card">
                 <InfoElement title="Life After"
                     kdescription="Martin went to the local school in Coventry and lived with his foster family in England. He learned English quickly, which led him to be put in the normal classes quite fast. Air raids occurred a lot in Coventry, with the worst being in November 1940. He moved to Birmingham for University, where he got a PhD in Chemistry, and he has lived there since. No information is available on whether he has died. The latest date I can find relating to him is 2017." kimg="/images/elieGrave.jpg" kimgalt="my nuts"
-                    wdescription="" wimg="/images/elieGrave.jpg" wimgalt="my nuts"
-                    similarities="asfdsssdf" />
+                    wdescription="After being liberated, he moved to France on a transport of many child Buchenwald survivors. In France, he took to learning and became a journalist. He refused to write about his experiences for 10 years, until he met with French author François Mauriac. He wrote the 900 page memoir Un di velt hot geshvign (Night) in Yiddish, selling more than 10 million copies in the US. In 1955, he moved to the US and got married, having one child, and there he wrote more than 40 books. He also was a teacher at Boston University. He has won numerous awards too, such as the Nobel Peace Prize in 1986. He died July 2nd, 2016."
+                    wimg="/images/elieGrave.jpg" wimgalt="my nuts"
+                    similarities="Both pursued higher education and had fairly good lives after the end of the Holocaust." />
             </div>
             <Card>
                 <CardHeader title="Works Cited" action={<ExpandMore
                     expand={expanded}
                     onClick={handleExpandClick}
                     aria-expanded={expanded}
-                    aria-label="show more" f
+                    aria-label="show more"
                 >
                     <ExpandMoreIcon />
                 </ExpandMore>} />
