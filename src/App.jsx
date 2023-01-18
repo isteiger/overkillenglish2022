@@ -2,7 +2,7 @@ import "./App.css";
 
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Timeline from "@mui/lab/Timeline";
-import { Card, CardHeader, Collapse, Divider, IconButton } from "@mui/material";
+import { Card, CardHeader, Collapse, Divider, IconButton, List, ListItem, ListItemButton, ListItemText, Tooltip } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
@@ -103,19 +103,19 @@ function App() {
             <div className="card">
                 <InfoElement title="Place of Survival Experiences"
 
-                    ksubheader="Poland, October 1938" kdescription="Continuing from before, Martin, his mother, and his sister were forced to walk along railroad tracks with a bunch of other people until they were in Poland, where authorities were confused. He next went to his relatives temporarily in Kraków, since they had nowhere else to stay. After that, they found a place to stay with their other relatives in Brzesko, a small village without many things like gas and water supply. His mother managed to get him and his sister a spot on a Kindertransport to England. None of his family in Poland survived the war." kimg="/images/elieGrave.jpg" kimgalt="my nuts"
-                    wsubheader="Auschwitz & Buchenwald, May 1944 - April 11th, 1945" wdescription="After surviving the intial selection, Elie and his father stuck together and were sent to work. Work was all they ever did. So many traumatic experiences happened there, from witnessing people getting shot on the spot, to people fighting and killing each other for food. When the Allies were getting closer to Auschwitz, Elie had been in the infirmary, and thought that if he stayed he would die, so he decided to evacuate to Buchenwald. Had he stayed, he would have been liberated. At Buchenwald, his father dies of dysentary caught from the long and grueling journey to the new camp. Later on, Elie is liberated by the Americans in April 1945." wimg="/images/elieGrave.jpg" wimgalt="my nuts"
+                    ksubheader="Poland, October 1938" kdescription="Continuing from before, Martin, his mother, and his sister were forced to walk along railroad tracks with a bunch of other people until they were in Poland, where authorities were confused. He next went to his relatives temporarily in Kraków, since they had nowhere else to stay. After that, they found a place to stay with their other relatives in Brzesko, a small village without many things like gas and water supply. His mother managed to get him and his sister a spot on a Kindertransport to England. None of his family in Poland survived the war." kimg="/images/polenaktion3.jpeg" kimgalt="Polenaktion"
+                    wsubheader="Auschwitz & Buchenwald, May 1944 - April 11th, 1945" wdescription="After surviving the intial selection, Elie and his father stuck together and were sent to work. Work was all they ever did. So many traumatic experiences happened there, from witnessing people getting shot on the spot, to people fighting and killing each other for food. When the Allies were getting closer to Auschwitz, Elie had been in the infirmary, and thought that if he stayed he would die, so he decided to evacuate to Buchenwald. Had he stayed, he would have been liberated. At Buchenwald, his father dies of dysentary caught from the long and grueling journey to the new camp. Later on, Elie is liberated by the Americans in April 1945." wimg="/images/auschwitzPrisoners.webp" wimgalt="Auschwitz Prisoners"
                     similarities="This could not be more different. Martin was not sent to a concentration camp and instead he was just sent to Poland, so you could say he had it a lot easier, but you also have to remember that what he went through is still unacceptable. " />
             </div>
             <div className="card">
                 <InfoElement title="Life After"
-                    kdescription="Martin went to the local school in Coventry and lived with his foster family in England. He learned English quickly, which led him to be put in the normal classes quite fast. Air raids occurred a lot in Coventry, with the worst being in November 1940. He moved to Birmingham for University, where he got a PhD in Chemistry, and he has lived there since. No information is available on whether he has died. The latest date I can find relating to him is 2017." kimg="/images/elieGrave.jpg" kimgalt="my nuts"
+                    kdescription="Martin went to the local school in Coventry and lived with his foster family in England. He learned English quickly, which led him to be put in the normal classes quite fast. Air raids occurred a lot in Coventry, with the worst being in November 1940. He moved to Birmingham for University, where he got a PhD in Chemistry, and he has lived there since. No information is available on whether he has died. The latest date I can find relating to him is 2017." kimg="/images/martin.jpeg" kimgalt="Martin Kapel"
                     wdescription="After being liberated, he moved to France on a transport of many child Buchenwald survivors. In France, he took to learning and became a journalist. He refused to write about his experiences for 10 years, until he met with French author François Mauriac. He wrote the 900 page memoir Un di velt hot geshvign (Night) in Yiddish, selling more than 10 million copies in the US. In 1955, he moved to the US and got married, having one child, and there he wrote more than 40 books. He also was a teacher at Boston University. He has won numerous awards too, such as the Nobel Peace Prize in 1986. He died July 2nd, 2016."
-                    wimg="/images/elieGrave.jpg" wimgalt="my nuts"
+                    wimg="/images/elie.webp" wimgalt="Elie Wiesel in an office"
                     similarities="Both pursued higher education and had fairly good lives after the end of the Holocaust." />
             </div>
             <Card>
-                <CardHeader title="Works Cited" action={<ExpandMore
+                <CardHeader title="Works Cited" subheader="All citations in MLA9 format" action={<ExpandMore
                     expand={expanded}
                     onClick={handleExpandClick}
                     aria-expanded={expanded}
@@ -127,19 +127,64 @@ function App() {
                     <Divider />
                     <div style={{ display: "flex", flexDirection: "row" }}>
                         <div style={{ width: "50%" }}>
-                            <CardHeader title="Martin Kapel" style={{ textAlign: "right" }} />
+                            <CardHeader title="Martin Kapel" style={{ textAlign: "center" }} />
                             <div style={{ display: "flex" }}>
-                                <Typography variant="body2" color="text.secondary" style={{ marginLeft: "1rem", flexGrow: "1", textAlign: "right" }}>
-                                    jckljfklj
-                                </Typography>
+                                <List style={{ flexGrow: "1", textAlign: "right" }}>
+                                    <ListItem disablePadding>
+                                        <Tooltip title="Visit Site">
+                                            <ListItemButton component="a" href="https://web.archive.org/web/20201101141250/https://holocaustlearning.org.uk/stories/martin-kapel/" target="_blank">
+                                                <ListItemText primary="“Martin Kapel.” The Holocaust Exhibition and Learning Center UK, Holocaust Survivors’ Friendship Association, https://web.archive.org/web/20201101141250/https://holocaustlearning.org.uk/stories/martin-kapel/. " />
+                                            </ListItemButton>
+                                        </Tooltip>
+                                    </ListItem>
+                                    <Divider />
+                                    <ListItem disablePadding>
+                                        <Tooltip title="Visit Site">
+                                            <ListItemButton component="a" href="https://www.shalomadventure.com/jewish-life/shoah-holocaust/2284-martin-kapel-german-poland-and-england" target="_blank">
+                                                <ListItemText primary="Unknown. “Martin Kapel: German, Poland and England.” Shalom Adventure Webmagazine, https://www.shalomadventure.com/jewish-life/shoah-holocaust/2284-martin-kapel-german-poland-and-england. " />
+                                            </ListItemButton>
+                                        </Tooltip>
+                                    </ListItem>
+                                    <Divider />
+                                    <ListItem disablePadding>
+                                        <Tooltip title="Visit Site">
+                                            <ListItemButton component="a" href="https://www.hmd.org.uk/resource/martin-kapel/" target="_blank">
+                                                <ListItemText primary="“Martin Kapel.” Holocaust Memorial Day Trust, Holocaust Memorial Day Trust, https://www.hmd.org.uk/resource/martin-kapel/." />
+                                            </ListItemButton>
+                                        </Tooltip>
+                                    </ListItem>
+                                </List>
+
                             </div>
                         </div>
                         <div style={{ width: "50%", borderLeft: "thin solid rgba(0, 0, 0, 0.12)" }}>
-                            <CardHeader title="Elie Wiesel" />
+                            <CardHeader style={{ textAlign: "center" }} title="Elie Wiesel" />
                             <div style={{ display: "flex" }}>
-                                <Typography variant="body2" color="text.secondary" style={{ marginRight: "1rem" }}>
-                                    sfsd
-                                </Typography>
+                                <List style={{ flexGrow: "1", textAlign: "right" }}>
+                                    <ListItem disablePadding>
+                                        <Tooltip title="Visit Site">
+                                            <ListItemButton component="a" href="https://www.nobelprize.org/prizes/peace/1986/wiesel/biographical/" target="_blank">
+                                                <ListItemText primary="“The Nobel Peace Prize 1986.” Edited by Wilhelm Odelberg, NobelPrize.org, Nobel Foundation, https://www.nobelprize.org/prizes/peace/1986/wiesel/biographical/. " />
+                                            </ListItemButton>
+                                        </Tooltip>
+                                    </ListItem>
+                                    <Divider />
+                                    <ListItem disablePadding>
+                                        <Tooltip title="Visit Site">
+                                            <ListItemButton component="a" href="https://en.wikipedia.org/wiki/Elie_Wiesel" target="_blank">
+                                                <ListItemText primary="“Elie Wiesel.” Wikipedia, Wikimedia Foundation, 2 Jan. 2023, https://en.wikipedia.org/wiki/Elie_Wiesel." />
+                                            </ListItemButton>
+                                        </Tooltip>
+                                    </ListItem>
+                                    <Divider />
+                                    <ListItem disablePadding>
+                                        <Tooltip title="Visit Site">
+                                            <ListItemButton component="a" href="https://www.hmd.org.uk/resource/martin-kapel/" target="_blank">
+                                                <ListItemText primary="“Elie Wiesel.” United States Holocaust Memorial Museum, United States Holocaust Memorial Museum, https://encyclopedia.ushmm.org/content/en/article/elie-wiesel. " />
+                                            </ListItemButton>
+                                        </Tooltip>
+                                    </ListItem>
+                                </List>
                             </div>
                         </div>
                     </div>
