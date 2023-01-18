@@ -10,16 +10,20 @@ export default function InfoElement(props) {
                 <div style={{ width: "40%" }} >
                     {props.ksubheader ? <CardHeader title="Martin Kapel" subheader={props.ksubheader} style={{ textAlign: "right" }} /> : <CardHeader title="Martin Kapel" style={{ textAlign: "right" }} />}
 
-                    <div style={{ display: "flex" }}>
+                    <div style={{ display: "flex", height: "inherit" }}>
                         <Typography variant="body2" color="text.secondary" style={{ marginLeft: "1rem", flexGrow: "1", textAlign: "right" }}>
                             {props.kdescription}
                         </Typography>
+                        <div style={{ marginLeft: "1rem", borderTopLeftRadius: "1rem", flexBasis: "20vw", flexGrow: 0, flexShrink: 0, backgroundImage: `url('${props.kimg}')`, backgroundSize: "cover" }}>
+
+                        </div>
+                        {/*
                         <CardMedia
                             component="img"
                             image={props.kimg}
                             alt={props.kimgalt}
                             style={{ marginLeft: "1rem", borderTopLeftRadius: "1rem", maxHeight: "15rem", width: "auto" }}
-                        />
+                        />*/}
                     </div>
                 </div>
 
@@ -34,13 +38,11 @@ export default function InfoElement(props) {
 
                 <div style={{ width: "40%" }}>
                     {props.wsubheader ? <CardHeader title="Elie Wiesel" subheader={props.wsubheader} /> : <CardHeader title="Elie Wiesel" />}
-                    <div style={{ display: "flex" }}>
-                        <CardMedia
-                            component="img"
-                            image={props.wimg}
-                            alt={props.wimgalt}
-                            style={{ marginRight: "1rem", borderTopRightRadius: "1rem", maxHeight: "15rem", width: "auto" }}
-                        />
+                    <div style={{ display: "flex", height: "inherit" }}>
+                        <div style={{ marginRight: "1rem", borderTopRightRadius: "1rem", flexBasis: "20vw", flexGrow: 0, flexShrink: 0, backgroundImage: `url('${props.wimg}')`, backgroundSize: "cover" }}>
+
+                        </div>
+
                         <Typography variant="body2" color="text.secondary" style={{ marginRight: "1rem" }}>
                             {props.wdescription}
                         </Typography>
